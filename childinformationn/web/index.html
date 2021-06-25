@@ -30,33 +30,27 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.6/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
-    var serviceWorkerVersion = null;
-    var scriptLoaded = false;
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+
   <script>
   // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "your api key",
-    authDomain: "app_name.firebaseapp.com",
-    projectId: "app_name2",
-    storageBucket: "app_name.appspot.com",
-    messagingSenderId: "882321312y",
-    appId: "1:1782944473493525:web:923488234",
-    measurementId: "G-4dmfnsd"
+    apiKey: "AIzaSyDMHDHlCQ7sVMMfZNWbgXJ_lAziciqAbv0",
+    authDomain: "childinformationweb.firebaseapp.com",
+    projectId: "childinformationweb",
+    storageBucket: "childinformationweb.appspot.com",
+    messagingSenderId: "731549767834",
+    appId: "1:731549767834:web:87470100bc336519a8e723"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
   </script>
-
-
-
-
+  var serviceWorkerVersion = null;
+  var scriptLoaded = false;
 
 
     function loadMainDartJs() {
